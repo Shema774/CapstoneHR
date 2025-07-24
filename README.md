@@ -2,44 +2,87 @@
 
 
 
-## Template Instructions
 
-Welcome,
+## Project Plan & Dashboard Communication Strategy
 
-This is the Code Institute student template for the Data Analytics capstone project. We have preinstalled all of the tools you need to get started. It's perfectly okay to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
+###  Project Plan
 
-You can safely delete the Template Instructions section of this README.md file and modify the remaining paragraphs for your own project. Please do read the Template Instructions at least once, though! It contains some important information about the IDE and the extensions we use.
+This capstone project followed a structured data analysis pipeline, documented in the Jupyter Notebook and supported by the Power BI dashboard:
 
-## How to use this repo
+1. **Data Loading & Inspection**  
+   - Reviewed the IBM HR Attrition dataset from Kaggle to understand structure, size, and feature types.
 
-1. Use this template to create your GitHub project repo. Click the **Use this template** button, then click **Create a new repository**.
+2. **Data Cleaning & Preprocessing**  
+   - Removed irrelevant features, handled missing values, and encoded the target variable (`Attrition`) for modelling.
 
-1. Copy the URL of your repository to your clipboard.
+3. **Exploratory Data Analysis (EDA)**  
+   - Used Python libraries (Seaborn, Matplotlib, Plotly) to uncover patterns in attrition by department, satisfaction, income, and experience.
 
-1. In VS Code, select **File** -> **Open Folder**.
+4. **Modelling**  
+   - Trained Logistic Regression and Decision Tree models to predict attrition.
+   - Evaluated using accuracy, confusion matrix, and classification report.
 
-1. Select your `vscode-projects` folder, then click the **Select Folder** button on Windows, or the **Open** button on Mac.
+5. **Reflection & Insights**  
+   - Addressed class imbalance challenges.
+   - Explained rationale behind methods and improvements made (e.g. model tuning, feature selection).
 
-1. From the top menu in VS Code, select **Terminal** > **New Terminal** to open the terminal.
+6. **Power BI Dashboard Creation**  
+   - Built to communicate key findings interactively to both technical and business audiences.
 
-1. In the terminal, type `git clone` followed by the URL of your GitHub repository. Then hit **Enter**. This command will download all the files in your GitHub repository into your vscode-projects folder.
+---
 
-1. In VS Code, select **File** > **Open Folder** again.
+###  Power BI Dashboard Design
 
-1. This time, navigate to and select the folder for the project you just downloaded. Then, click **Select Folder**.
+The dashboard was structured across two pages to balance **strategic business insights** with **technical depth**:
 
-1. A virtual environment is necessary when working with Python projects to ensure each project's dependencies are kept separate from each other. You need to create your virtual environment, also called a venv, and then ensure that it is activated any time you return to your workspace.
-Click the gear icon in the lower left-hand corner of the screen to open the Manage menu and select **Command Palette** to open the VS Code command palette.
+####  Page 1: Workforce Summary
+This page targets **non-technical stakeholders (e.g., HR Managers)** by visually summarising workforce dynamics:
 
-1. In the command palette, type: *create environment* and select **Python: Create Environment…**
+- **Attrition by Education Label**  
+  Shows educational backgrounds of employees leaving the company.
 
-1. Choose **Venv** from the dropdown list.
+- **Attrition & Average Monthly Income by Age**  
+  Highlights income-age patterns and retention across generations.
 
-1. Choose the Python version you installed earlier. Currently, we recommend Python 3.12.8
+- **Attrition Rate by Department**  
+  Identifies departments with the highest turnover rates.
 
-1. **DO NOT** click the box next to `requirements.txt`, as you need to do more steps before you can install your dependencies. Click **OK**.
+- **Attrition & Income by Tenure Group**  
+  Reveals how long-serving employees compare to newer hires in terms of pay and attrition.
 
-1. You will see a `.venv` folder appear in the file explorer pane to show that the virtual environment has been created.
+- **Work-Life Balance vs. Attrition**  
+  Compares satisfaction levels to turnover, indicating which groups are at risk.
+
+ *Purpose:* To support data-driven HR policies by clearly communicating trends and risks.
+
+---
+
+####  Page 2: Statistical Insights
+This page supports **technical audiences and analysts** seeking deeper understanding through statistical metrics:
+
+- **Mean & Variance of Monthly Income (Attrition = Yes)**  
+  Analyses income variability among those who left.
+
+- **Slicers (Department, Tenure Group, Education Level)**  
+  Enable focused exploration of how attrition correlates with demographic and career factors.
+
+  *Purpose:* To uncover nuanced drivers of attrition and support advanced segmentation strategies.
+
+---
+
+###  Communication Approach
+
+- **For Technical Audiences:**  
+  Jupyter Notebook includes detailed code, statistical outputs, modelling logic, and reflections on limitations.
+
+- **For Non-Technical Stakeholders:**  
+  Power BI visualisations simplify key insights (e.g., who is leaving and why) through clear charts, filters, and KPIs.
+
+This dual approach ensures that findings are **accessible, actionable, and relevant** to a wide range of decision-makers.
+
+
+
+1appear in the file explorer pane to show that the virtual environment has been created.
 
 1. **Important**: Note that the `.venv` folder is in the `.gitignore` file so that Git won't track it.
 
