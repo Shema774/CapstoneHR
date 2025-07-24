@@ -1,5 +1,75 @@
 # ![CapstoneHR Logo](Assets/HRlogo.png)
 
+##  Project Overview – IBM HR Attrition Analysis
+
+This capstone project explores employee attrition using a real-world HR dataset provided by IBM. The goal is to identify key factors that influence employee turnover and develop predictive models that help HR teams make informed, data-driven decisions.
+
+Using Python (Pandas, Seaborn, Matplotlib, Scikit-learn, Plotly) and Power BI, the project combines data analysis, visual storytelling, and machine learning to uncover insights around employee behaviour, job satisfaction, and organisational trends.
+
+---
+
+###  Project Objectives
+
+- Investigate which personal and professional attributes (e.g., age, income, education, tenure) are linked to higher attrition risk
+- Explore whether performance ratings correlate with attrition, satisfaction, or promotion likelihood
+- Identify early warning signs of voluntary attrition
+- Examine how departmental trends influence turnover, especially within high-performing teams
+- Build classification models to predict which employees are at risk of leaving
+
+---
+
+###  Dataset
+
+- Source: [IBM HR Analytics Attrition Dataset on Kaggle](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset)
+- Contains demographic, job-related, and performance data for 1,470 employees
+
+---
+
+###  Project Structure
+
+1. **Data Cleaning & Preprocessing**  
+   - Removed constant columns
+   - Encoded categorical variables (e.g., Attrition → binary)
+   - Saved processed dataset for modelling
+
+2. **Exploratory Data Analysis (EDA)**  
+   - Bar charts, histograms, and heatmaps to explore trends in attrition by department, role, income, and satisfaction
+
+   ###  Categorical Feature Distributions
+   ![Attrition by Department](images/categorical_distribution_dashboard.png)
+
+   ###  Correlation Heatmap
+   ![Correlation Heatmap](images/eda_heatmap.png)
+
+   ###  Monthly Income Distribution with Normal Curve
+   ![Monthly Income Distribution with Normal Curve](images/Histogram_KDE_Curve.png)
+
+   ###  Monthly Income vs Age by Attrition Status
+   ![Monthly Income vs Age by Attrition Status](images/newplot.png)
+
+
+3. **Modelling**  
+   - Logistic Regression  
+   - Decision Tree Classifier  
+   - Evaluation using accuracy, classification report, and confusion matrix  
+   - Reflections on performance and class imbalance
+
+4. **Dashboard Visualisation (Power BI)**  
+   - Page 1: Workforce Overview — attrition by age, tenure, department  
+   - Page 2: Statistical Insights — mean & variance, dynamic slicers to drill down by education, department, and satisfaction
+
+---
+
+###  Key Takeaways
+
+- Class imbalance (only ~16% attrition) heavily influences model performance  
+- Job level, total working years, and monthly income are strongly correlated  
+- Satisfaction levels and short tenure appear to be early warning signs  
+- Dashboards and visual storytelling can turn technical metrics into business-relevant insight
+
+---
+
+This project demonstrates a complete data analysis pipeline — from cleaning and visualisation to predictive modelling and stakeholder-ready dashboards.
 
 
 
@@ -103,38 +173,40 @@ This page supports **technical audiences and analysts** seeking deeper understan
 
 This dual approach ensures that findings are **accessible, actionable, and relevant** to a wide range of decision-makers.
 
+##  8.2 – Employ Visualisations and Narratives to Enhance User Understanding
+
+This project integrates a range of visualisation tools and narrative techniques to support both technical analysis and stakeholder communication.
+
+###  In the Jupyter Notebook:
+Visual tools such as **Matplotlib**, **Seaborn**, and **Plotly** were used to:
+
+- Explore feature distributions (e.g., Attrition by Department, Education Field)
+- Reveal correlations between numeric features using a **heatmap**
+- Create **interactive dashboards** with Plotly to drill into department-level attrition and satisfaction trends
+
+Each visualisation is accompanied by **clear markdown commentary** explaining:
+- What the chart shows
+- Why the chart is relevant
+- Key insights and limitations
+
+###  In the Power BI Dashboard:
+Two dashboard pages were created to support **different audience needs**:
+
+1. **Company Workforce Summary**
+   - Shows high-level trends in attrition by education, department, age, tenure, and satisfaction
+
+2. **Statistical Insights**
+   - Communicates technical metrics like **mean** and **variance** using slicers and dynamic filtering
+
+Design choices (e.g., bar charts, line graphs, tooltip details) were made to enhance **clarity and interpretability** for both technical and non-technical users.
+
+---
+
+These elements collectively ensure that the analysis is not only robust but also **accessible and actionable**, meeting the 8.2 requirement.
 
 
-1appear in the file explorer pane to show that the virtual environment has been created.
 
-1. **Important**: Note that the `.venv` folder is in the `.gitignore` file so that Git won't track it.
 
-1. Return to the terminal by clicking on the TERMINAL tab, or click on the **Terminal** menu and choose **New Terminal** if no terminal is currently open.
 
-1. In the terminal, use the command below to install your dependencies. This may take several minutes.
 
- ```console
- pip3 install -r requirements.txt
- ```
 
-1. Open the `jupyter_notebooks` directory, and click on the notebook you want to open.
-
-1. Click the **kernel** button and choose **Python Environments**.
-
-Note that the kernel says `Python 3.12.8` as it inherits from the venv, so it will be Python-3.12.8 if that is what is installed on your PC. To confirm this, you can use the command below in a notebook code cell.
-
-```console
-! python --version
-```
-
-## Deployment Reminders
-
-* Set the `.python-version` Python version to a [Heroku-22](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version that closest matches what you used in this project.
-* The project can be deployed to Heroku using the following steps.
-
-1. Log in to Heroku and create an App
-2. At the **Deploy** tab, select **GitHub** as the deployment method.
-3. Select your repository name and click **Search**. Once it is found, click **Connect**.
-4. Select the branch you want to deploy, then click **Deploy Branch**.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button **Open App** at the top of the page to access your App.
-6. If the slug size is too large, then add large files not required for the app to the `.slugignore` file.
