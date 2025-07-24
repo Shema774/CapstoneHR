@@ -299,3 +299,20 @@ When visualisations failed to render due to data type issues, I used df.dtypes a
 | **Plotly**                         | Used for creating interactive and faceted data visualisations in Python. |
 | **Power BI**                       | Used to create an interactive dashboard for visualising and presenting key insights to stakeholders. |
 | **GitHub (Kanban & Repository)**   | Used for project management, version control, and documenting progress. |
+
+## Deployment & Accessibility
+
+- **Power BI Dashboard**:  
+  [HR Analytics Dashboard – Power BI (Web Link)](https://app.powerbi.com/groups/me/reports/Dashboard/CapstoneHRPBVisual.pbix)  
+  *An interactive dashboard visualising key HR insights such as attrition trends, job satisfaction, and department-wise performance.*
+
+- **Jupyter Notebook**:  
+   [CapstoneHR Analysis Notebook](notebooks/jupyter_notebooks/data_investigation.ipynb)  
+  *Complete analysis including data cleaning, EDA, visualisations, and reflections using Python.*
+
+- **GitHub Repository**:  
+  [CapstoneHR GitHub Repo](https://github.com/Shema774/CapstoneHR)  
+  *Clone and install required dependencies:*  
+  ```bash
+  pip install -r requirements.txt
+
