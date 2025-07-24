@@ -34,6 +34,29 @@ This capstone project followed a structured data analysis pipeline, documented i
 ###  Power BI Dashboard Design
 
 The dashboard was structured across two pages to balance **strategic business insights** with **technical depth**:
+##  Power BI Dashboard
+
+###  Page 1: Company Workforce Summary
+
+Visualisations include:
+- Attrition by education level
+- Monthly income vs age with attrition
+- Attrition rate by department and tenure
+- Number of leavers by satisfaction level
+
+![Company Workforce Summary](images/dashboard_page1.png)
+
+---
+
+###  Page 2: Statistical Insights
+
+Visualisations include:
+- Mean and variance of Monthly Income for leavers
+- Interactive slicers by Department, Tenure Group, and Education Level
+- Insights into pay structure and attrition relationships
+
+![Statistical Insights](images/dashboard_page2.png)
+
 
 ####  Page 1: Workforce Summary
 This page targets **non-technical stakeholders (e.g., HR Managers)** by visually summarising workforce dynamics:
