@@ -1,4 +1,5 @@
-# ![CapstoneHR Logo](CapstoneHR/assets/HR%20Logo.png)
+# ![CapstoneHR Logo](Assets/HRlogo.png)
+
 
 
 ## Template Instructions
