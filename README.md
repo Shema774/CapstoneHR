@@ -235,3 +235,67 @@ Design choices (e.g., bar charts, line graphs, tooltip details) were made to enh
 ---
 These elements collectively ensure that the analysis is not only robust but also **accessible and actionable**, meeting the 8.2 requirement.
 
+## Reflection on Learning Process
+
+This capstone project has been a significant learning journey, pushing me to apply and deepen my skills in data analytics. Initially, I faced several challenges ranging from dataset handling and cleaning, to creating meaningful visualisations and communicating findings effectively through both code and narrative. These challenges ultimately became learning opportunities that strengthened my technical foundation and problem-solving mindset.
+
+### Key Learning Moments
+
+- **File structuring and output saving**  
+  I initially struggled with correct file path management in VSCode, which led to output errors. Through trial and error, and by researching `os.makedirs()` and proper directory handling, I successfully implemented a clear project structure.
+
+- **Plotly and data visualisation**  
+  Although familiar with static visualisation, adapting to Plotly's interactive features required additional learning. I overcame this by reading documentation, watching tutorials, and experimenting with different chart types.
+
+- **Git and version control**  
+  I improved my understanding of Git commands and commit practices, particularly when syncing changes from VSCode to GitHub.
+
+---
+
+## Strategies for Overcoming Challenges
+
+To address challenges, I used a variety of strategies:
+
+- **Incremental testing**  
+  I tested code blocks in isolation to identify where things were breaking.
+
+- **Using community resources**  
+  Platforms like Stack Overflow and GitHub issues were instrumental in resolving bugs and understanding best practices.
+
+- **Peer feedback**  
+  I received informal feedback on presentation and code readability from peers, which led me to better comment my code and restructure my analysis for clarity.
+
+---
+
+## Bug Fixes and Adaptations
+
+Examples of how I adapted my code during the project:
+
+- **FileNotFoundError when loading data**  
+  I realised I needed to create directories dynamically and ensure file paths were correct. Solved with:  
+  ```python
+  os.makedirs('data/inputs/raw', exist_ok=True)
+
+## Data cleaning inconsistencies
+Learned to use:
+df.isnull().sum() 
+df.duplicated().sum()
+to identify and address missing or duplicate data effectively.
+
+## Visualisation bugs
+When visualisations failed to render due to data type issues, I used df.dtypes and resolved them through appropriate type casting.
+
+### Development Roadmap
+| **Skill / Tool**         | **Why It’s Next**                                                   | **Planned Approach**                                 |
+| ------------------------ | ------------------------------------------------------------------- | ---------------------------------------------------- |
+| **Deployment Tools**     | To deploy notebooks as web apps or dashboards                       | Learn basics of Streamlit and Flask                  |
+| **Machine Learning**     | To move from descriptive to predictive analytics                    | Explore supervised learning using Scikit-learn       |
+
+##  Technology Framework
+
+| **Tool / Technology**               | **Purpose**                                                  |
+|------------------------------------|--------------------------------------------------------------|
+| **Pandas, NumPy, Matplotlib, Seaborn** | Core Python libraries used for data analysis, processing, and basic visualisation. |
+| **Plotly**                         | Used for creating interactive and faceted data visualisations in Python. |
+| **Power BI**                       | Used to create an interactive dashboard for visualising and presenting key insights to stakeholders. |
+| **GitHub (Kanban & Repository)**   | Used for project management, version control, and documenting progress. |
