@@ -316,3 +316,9 @@ When visualisations failed to render due to data type issues, I used df.dtypes a
   ```bash
   pip install -r requirements.txt
 
+##  Credits & Acknowledgments
+
+- **Data Source:** [IBM HR Analytics Employee Attrition Dataset (Kaggle)](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset)
+- **Tools Used:** Python, Power BI, GitHub
+- **Project Contributors:**  
+  Special thanks to mentors at Code Institute, and my peers and tutors for their guidance and support throughout this capstone project.
