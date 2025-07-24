@@ -37,16 +37,55 @@ Using Python (Pandas, Seaborn, Matplotlib, Scikit-learn, Plotly) and Power BI, t
 
    ###  Categorical Feature Distributions
    ![Attrition by Department](images/categorical_distribution_dashboard.png)
+   ##  Insights
+ - The bar charts display the distribution of employees across key categorical features: `Attrition`, `JobRole`, `Department`, `MaritalStatus`, and `EducationField`.  
+-  **Attrition:** Majority of employees stayed with the company, with only a small proportion leaving (class imbalance noted earlier).  
+-  **JobRole:** Certain roles like *Sales Executive* and *Research Scientist* have higher counts, while others such as *Human Resources* are underrepresented.  
+-  **Department:** Most employees work in *Research & Development*, followed by *Sales*; *Human Resources* has the fewest employees.  
+-  **MaritalStatus:** A relatively even distribution between *Married* and *Single* employees, with fewer *Divorced*.  
+-  **EducationField:** *Life Sciences* and *Medical* dominate, with other fields like *Human Resources* and *Technical Degree* being less common.  
+-  These insights will help identify potential patterns and imbalances within categorical variables, which could influence attrition trends and predictive modelling.
 
    ###  Correlation Heatmap
    ![Correlation Heatmap](images/eda_heatmap.png)
+   ## Insights
+   **Strong Positive Correlations:**
+  - `JobLevel` and `MonthlyIncome` (**+0.95**): Higher job levels are associated with higher monthly income, which is expected in organisational structures.
+  - `TotalWorkingYears` and `MonthlyIncome` (**+0.77**): Employees with more experience tend to earn more.
+  - `TotalWorkingYears` and `JobLevel` (**+0.78**): Senior employees tend to hold higher job levels.
+
+-  **Moderate Positive Correlations:**
+  - `Age` and `TotalWorkingYears` (**+0.68**): Older employees generally have more work experience.
+  - `Age` and `MonthlyIncome` (**+0.64**): Older employees tend to have higher salaries.
+
+-  **Weak or No Correlations:**
+  - `DailyRate`, `HourlyRate`, and `MonthlyRate` show very low correlations with other salary-related features. This suggests these rates might not provide much predictive value for attrition.
+
+-  **Negligible/Negative Correlations:**
+  - `PercentSalaryHike` and `MonthlyIncome` (**+0.03**): Salary hikes are not strongly correlated with income levels—indicating hikes may be percentage-based rather than absolute.
+  - `YearsAtCompany` and `YearsSinceLastPromotion` (**+0.35**): Moderate correlation—employees at a company longer are slightly more likely to have been promoted recently.
 
    ###  Monthly Income Distribution with Normal Curve
    ![Monthly Income Distribution with Normal Curve](images/Histogram_KDE_Curve.png)
-
+## Insights:
+- The histogram shows the actual income distribution.
+- The red dashed line is the idealised normal distribution with the dataset’s mean and standard deviation.
+- Deviations from the normal curve highlight skewness or outliers in salary data.
    ###  Monthly Income vs Age by Attrition Status
    ![Monthly Income vs Age by Attrition Status](images/newplot.png)
+##  Insights
+-   The scatter plot visualises employees’ **Age** vs **Monthly Income**, with:
+  - Bubble size representing **Total Working Years**.
+  - Colour indicating **Attrition status** (`Yes` = left, `No` = stayed).
+  - Hover data showing employee **JobRole** for deeper exploration.
 
+-   Clear positive trend between **Age** and **Monthly Income**: Older employees tend to earn higher salaries.
+
+-   Larger bubbles (more Total Working Years) are concentrated at higher income levels, as expected.
+
+-   Attrition (`Yes`) data points are scattered across age and income ranges but appear slightly more frequent among younger and lower-income employees.
+
+-   This visualisation helps identify potential patterns between employee demographics, tenure, and attrition risk.
 
 3. **Modelling**  
    - Logistic Regression  
