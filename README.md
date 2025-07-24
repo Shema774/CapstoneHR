@@ -96,7 +96,6 @@ Using Python (Pandas, Seaborn, Matplotlib, Scikit-learn, Plotly) and Power BI, t
 4. **Dashboard Visualisation (Power BI)**  
    - Page 1: Workforce Overview — attrition by age, tenure, department  
    - Page 2: Statistical Insights — mean & variance, dynamic slicers to drill down by education, department, and satisfaction
-
 ---
 
 ###  Key Takeaways
@@ -105,12 +104,9 @@ Using Python (Pandas, Seaborn, Matplotlib, Scikit-learn, Plotly) and Power BI, t
 - Job level, total working years, and monthly income are strongly correlated  
 - Satisfaction levels and short tenure appear to be early warning signs  
 - Dashboards and visual storytelling can turn technical metrics into business-relevant insight
-
 ---
 
 This project demonstrates a complete data analysis pipeline — from cleaning and visualisation to predictive modelling and stakeholder-ready dashboards.
-
-
 
 ## Project Plan & Dashboard Communication Strategy
 
@@ -137,7 +133,6 @@ This capstone project followed a structured data analysis pipeline, documented i
 
 6. **Power BI Dashboard Creation**  
    - Built to communicate key findings interactively to both technical and business audiences.
-
 ---
 
 ###  Power BI Dashboard Design
@@ -199,7 +194,6 @@ This page supports **technical audiences and analysts** seeking deeper understan
   Enable focused exploration of how attrition correlates with demographic and career factors.
 
   *Purpose:* To uncover nuanced drivers of attrition and support advanced segmentation strategies.
-
 ---
 
 ###  Communication Approach
