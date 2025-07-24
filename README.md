@@ -239,6 +239,5 @@ Two dashboard pages were created to support **different audience needs**:
 
 Design choices (e.g., bar charts, line graphs, tooltip details) were made to enhance **clarity and interpretability** for both technical and non-technical users.
 ---
-
 These elements collectively ensure that the analysis is not only robust but also **accessible and actionable**, meeting the 8.2 requirement.
 
